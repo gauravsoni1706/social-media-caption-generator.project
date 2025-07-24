@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Media Caption Generator</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📲 Social Media Caption Generator</h1>
+    <input type="text" id="keywords" placeholder="Enter keywords (e.g., fitness, travel)">
+    <select id="platform">
+      <option value="Instagram">Instagram</option>
+      <option value="LinkedIn">LinkedIn</option>
+      <option value="Twitter">Twitter</option>
+    </select>
+    <select id="tone">
+      <option value="fun">Fun</option>
+      <option value="professional">Professional</option>
+      <option value="inspirational">Inspirational</option>
+    </select>
+    <button onclick="generate()">Generate Caption</button>
+
+    <div id="result">
+      <h2>Generated Caption</h2>
+      <p id="caption"></p>
+      <p id="hashtags"></p>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
